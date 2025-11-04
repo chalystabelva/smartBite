@@ -2,7 +2,7 @@ body{
     margin: 0;
     font-family: poppins;
     background-color: #F2F2F2;
-    padding-top: 80px;
+    height: 100vh;
 }
 
 /* navbar */
@@ -78,62 +78,74 @@ body{
     transition: 0.3s ease;
 }
 
-
-/* category */
-.menu-section div{
-    margin-top: 50px;
+/* hero */
+.aboutus img{
+    width: 100%;
 }
-.menu-section h1{
+
+.visimisi-container{
+    justify-content: right;
+    padding: 50px 90px;
+    color: white;
+}
+.our-visimisi{
+    height: 400px;
+    margin-top: -50px;
+}
+.our-visimisi h1{
+    font-size: 64px;
+}
+.our-visimisi p{
+    margin-top: -50px;
+}
+
+
+/* our services section */
+.ourservices-text{
+    text-align: center;
     color: #F2780B;
-    font-size: 50px;
-    margin-left: 190px;
-    margin-top: 90px;
+    font-size: 64px;
+    padding-top: 100px;
 }
 
-.category-section{
-    margin-top: -15px;
-    display: flex;
-    gap: 200px;
-    font-size: 16px;
-    justify-content: center;
-    padding-top: 15px;
-    list-style: none;
-}
-.category-section a{
-    text-decoration: none;
-    color: white;
+.services-section {
+  background-color: #f4f4f4;
+  padding: 100px 0;
 }
 
-.makanan-container{
-    margin-top: 150px;
-    justify-content: center;
-    display: flex;
-    gap: 150px;
-    flex-wrap: wrap;
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  padding: 50px;
 }
 
-.makanan h5{
-    font-size: 18px;
-    margin-top: -2px;
-}
-.makanan p{
-    margin-top: -22px;
-}
-.makanan button{
-    margin-top: -22px;
-    width: 100px;
-    height: 30px;
-    border: grey 2px solid;
-    border-radius: 15px;
-}
-.makanan button:hover{
-    background-color: rgb(180, 180, 180);
-    color: white;
+.services-box {
+  background-color: #b5ba91;
+  width: 250px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+  color: #3d3d3d;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  color: #4F5902;
 }
 
-.makanan img{
-    width: 300px;
-    border-radius: 15px;
+.services-box:hover {
+  transform: translateY(-5px);
+}
+
+.services-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
 
 /* footer */

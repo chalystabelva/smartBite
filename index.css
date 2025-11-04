@@ -30,7 +30,7 @@ body{
 .navbar ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -92,6 +92,19 @@ body{
     margin-right: 100px;
     margin-top: 100px;
 }
+
+.gelombang-tipis {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.gelombang-tipis svg {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
 /* .hey{
     position: absolute;
     top: 250px;
@@ -156,7 +169,7 @@ body{
 .ourservices-text{
     text-align: center;
     color: #F2780B;
-    font-size: 45px;
+    font-size: 64px;
     padding-top: 100px;
 }
 
@@ -200,8 +213,139 @@ body{
   margin-bottom: 15px;
 }
 
-.about-section{
-    background-color: #4F5902;
+/* about us section */
+.about-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+}
+.about-tittle{
     width: 35%;
-    justify-content: space-around;
+}
+.about-tittle h1{
+    color: #F2780B;
+    font-size: 64px;
+}
+.about-tittle P{
+    margin-top: -50px;
+}
+
+.about-btn{
+    width: 150px;
+    height: 50px;
+    border: #F2780B 2px solid;
+    background-color: transparent;
+    border-radius: 50px;
+    color: #F2780B;
+    font-weight: bold;
+    font-size: 14px;
+}
+.about-btn:hover{
+    color: #c05f0a;
+    border: #c05f0a 2px solid;
+}
+
+.about-img img{
+    width: 590px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.brand-img{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150px;
+}
+.brand-img img{
+    border-radius: 15px;
+}
+
+.brand-text{
+    width: 500px;
+}
+.brand-text h1{
+    font-size: 64px;
+    color: #F2780B;
+    font: bold;
+}
+.brand-text p{
+    margin-top: -50px;
+}
+
+/* testimonials */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    color: #e3e3e3;
+    margin: 150px auto;
+    background-color: #F2780B;
+    width: 450px;
+    height: 50px;
+}
+.testi-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    margin: 40px auto;
+    width: 80%;
+    scrollbar-width: thin;
+}
+
+.testi-box {
+    flex: 0 0 250px;           /* Ukuran tetap tiap kotak */
+    background: #b5ba91;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 20px 15px 20px 15px;
+    text-align: center;
+    font-size: 15px;
+    transition: transform 0.3s ease;
+}
+.testi-box:hover{
+    transform: scale(1.08); 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.testi-container::-webkit-scrollbar{
+    display: none;
+}
+.testi-container::-webkit-scrollbar-thumb {
+    background: #aaa;
+    border-radius: 3px;
+}
+
+/* footer */
+
+footer{
+    background-color: #4F5902;
+    margin-top: 150px;
+}
+.footer-container{
+    color: white;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li{
+    margin-bottom: 5px;
+}
+.footer-section a{
+    text-decoration: none;
+    color: white;
 }
